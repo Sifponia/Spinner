@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Spinner</string>
+    <string name="Numero1">Ingresa el primer numero</string>
+    <string name="Numero2">Ingresa el segundo numero</string>
+    <string name="Botton">Resultado</string>
+    <string name="tvResultado">Resultado</string>
+</resources>

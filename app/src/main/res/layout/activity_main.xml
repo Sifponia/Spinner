@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etNumero1"
+        android:layout_width="310dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="@string/Numero1"
+        android:inputType="numberDecimal"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/etNumero2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/etNumero2"
+        android:layout_width="318dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:hint="@string/Numero2"
+        android:inputType="numberDecimal"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/Spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNumero1"
+        android:autofillHints="" />
+
+    <Spinner
+        android:id="@+id/Spinner"
+        android:layout_width="392dp"
+        android:layout_height="74dp"
+        app:layout_constraintBottom_toTopOf="@+id/bResultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNumero2" />
+
+    <Button
+        android:id="@+id/bResultado"
+        android:layout_width="133dp"
+        android:layout_height="53dp"
+        android:onClick="operacionesArit"
+        android:text="@string/Botton"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/twResultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Spinner" />
+
+    <TextView
+        android:id="@+id/twResultado"
+        android:layout_width="332dp"
+        android:layout_height="49dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bResultado" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
